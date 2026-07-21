@@ -103,13 +103,13 @@ switch (day) {
 // تمرین 11
 var color = "red";
 switch (color) {
-    case red:
+    case "red":
         console.log("Stop");
         break;
-    case yellow:
+    case "yellow":
         console.log("Wait");
         break;
-    case green:
+    case "green":
         console.log("Go");
         break;
     default:
@@ -211,8 +211,8 @@ if (x == 10) {
 var jacket = 14580000;
 if (jacket > 3000000) {
     console.log("ارسال رایگان");
-}else{
-     console.log("هزینه ارسال: 120 هزار تومان");
+} else {
+    console.log("هزینه ارسال: 120 هزار تومان");
 }
 
 // پروژه 3
@@ -247,5 +247,37 @@ switch (operator) {
         break;
     default:
         console.log("you should choose another operator");
+        break;
+}
+
+// ATM
+var accountBalance = 5000000;
+var ask = Number(prompt(" 1-مشاهده موجودی 2- برداشت موجودی 3- واریز وجه 4- خروج                عدد مورد نظر را انتخاب کنید : "));
+switch (ask) {
+    case 1:
+        console.log(accountBalance);
+        break;
+    case 2:
+        var withdraw = Number(prompt("چقدر می‌خواهی برداشت کنی؟"));
+        if (withdraw <= accountBalance ) {
+            console.log(accountBalance - withdraw);
+        } else {
+            console.log("موجودی کافی نیست.");
+        }
+        break;
+    case 3:
+        var deposit = Number(prompt("چقدر می‌خواهی واریز کنی؟"));
+        if (deposit <= accountBalance) {
+            console.log(accountBalance - deposit);
+        } else {
+            console.log("موجودی کافی نیست.");
+        }
+        break;
+    case 4:
+        console.log("با تشکر ، خدانگهدار");
+        break;
+    default:
+        console.log("");
+        
         break;
 }
