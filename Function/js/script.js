@@ -109,3 +109,19 @@ var info = {
     age: 24,
     city: "هشتگرد"
 }
+
+// پروژه 1 & 2
+var mahsol = {
+    name: "غذای خشک کیتن",
+    price: 45000,
+    quantity: 24
+}
+function showProduct() {
+    document.getElementById("pet").innerHTML =
+    "نام : " + mahsol.name +
+    "<br>" + " قیمت : " + mahsol.price +
+    "<br>" + " تعداد : " + mahsol.quantity +
+    "<br>" + " قیمت نهایی : " + final;
+}
+var final = mahsol.price * mahsol.quantity;
+showProduct()
