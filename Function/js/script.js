@@ -37,11 +37,14 @@ function card(commodity1) {
     // document.getElementById('commodity').innerHTML = commodity1 ;
     // روش 2 که از object اسم رو بخونه 
     // روش 2 حرفه ای تره
-    document.getElementById('commodity').innerHTML = commodity1.name;
-    // document.getElementById('commodity').innerHTML = commodity1.price;
-    // document.getElementById('commodity').innerHTML = commodity1.brand;
+    // روشی که چند تا المان" ابجکت رو صدا کردیم
+    document.getElementById('commodity').innerHTML =
+        'نام : ' + commodity1.name +
+        '<br>قیمت : ' + commodity1.price +
+        '<br>برند : ' + commodity1.brand;
 }
 // card('لوسیون, کرم, ریمل, خط چشم')
+
 var product = {
     name: "لوسیون",
     price: 250000,
@@ -63,3 +66,46 @@ function sayHello() {
     console.log("Hello");
 }
 sayHello();
+
+// تمرین 7 
+function showDog(dog) {
+    document.getElementById("animalInfo").innerHTML =
+        "Category: " + dog.category +
+        "<br>Behavior: " + dog.behavior;
+}
+
+function showCat(cat) {
+    document.getElementById("animalInfo").innerHTML =
+        "Lifespan: " + cat.lifespan +
+        "<br>Sense of hearing: " + cat.senseOfHearing;
+}
+
+var dog = {
+    category: "Mammals",
+    behavior: "Intelligent"
+};
+
+var cat = {
+    lifespan: "12 to 15 years",
+    senseOfHearing: "Stronger than a human's"
+};
+
+// تمرین 8
+function showName(name) {
+    document.getElementById("show8").innerHTML =
+        "نام : " + info.name;
+}
+function showAge(name) {
+    document.getElementById("show8").innerHTML =
+        "سن : " + info.age;
+}
+function showCity(name) {
+    document.getElementById("show8").innerHTML =
+        "شهر : " + info.city;
+}
+
+var info = {
+    name: "زهرا",
+    age: 24,
+    city: "هشتگرد"
+}
