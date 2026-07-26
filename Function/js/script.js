@@ -160,3 +160,46 @@ calculate()
 console.log(num1);
 console.log(num2);
 console.log(operator);
+
+// پروژه فروشگاه
+var productُStore = {
+    name: "گل رز",
+    price: 200000,
+    count: 5
+};
+
+// فقط کار این تابع اینه که تعداد محصول رو نمایش بده
+function store() {
+    // این شرط برای اینه که اگر محصول از اول ارا صفرر بود ناموجود بودن اعلام بشه
+    if (productُStore.count == 0) {
+        document.getElementById("count").innerHTML =
+            "تعداد محصول : " + productُStore.count +
+            "<br>" + "<br>" +
+            "❌ این محصول ناموجود است."
+    } 
+    // این بخش هم که بیشتر از صفر باشه اجرا میشه
+    else {
+        document.getElementById("count").innerHTML =
+            "تعداد محصول : " + productُStore.count;
+    }
+}
+store()
+
+// کار این تابع میشه گفت که مسئول خرید کردنه
+function addToBasket() {
+    if (productُStore.count >= 1) {
+        // تو اول اینجوری زده بودی
+        // productُStore.count - 1 ;
+        // درستش اینه
+        productُStore.count = productُStore.count - 1;
+        // پایینی کوتاه تر شده ی بالاییه 
+        // productStore.count--;
+        store();
+    }
+    if (productُStore.count == 0) {
+        document.getElementById("count").innerHTML =
+            "تعداد محصول : " + productُStore.count +
+            "<br>" + "<br>" +
+            "❌ این محصول ناموجود است."
+    }
+}
