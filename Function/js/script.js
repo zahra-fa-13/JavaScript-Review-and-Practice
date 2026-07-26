@@ -125,3 +125,38 @@ function showProduct() {
 }
 var final = mahsol.price * mahsol.quantity;
 showProduct()
+
+// calculate v2
+var num1 = Number(prompt("enter number first number:"));
+var num2 = Number(prompt("enter number second number:"));
+var operator = prompt("enter operator:");
+
+function calculate() {
+
+    if (operator === "+") {
+        document.getElementById("cal").innerHTML =
+            "جمع : " + (num1 + num2);
+    } else if (operator === "-") {
+        document.getElementById("cal").innerHTML =
+            "تفریق : " + (num1 - num2);
+    } else if (operator === "*") {
+        document.getElementById("cal").innerHTML =
+            "ضرب : " + (num1 * num2);
+    } else if (operator === "/") {
+        document.getElementById("cal").innerHTML =
+            "تقسیم : " + (num1 / num2);
+    } else if (operator === "%") {
+        document.getElementById("cal").innerHTML =
+            "باقی مانده  : " + (num1 % num2);
+    } else if (operator === "**") {
+        document.getElementById("cal").innerHTML =
+            "توان : " + (num1 ** num2);
+    } else {
+        document.getElementById("cal").innerHTML =
+            "عملگر نامعتبر است.";
+    }
+}
+calculate()
+console.log(num1);
+console.log(num2);
+console.log(operator);
