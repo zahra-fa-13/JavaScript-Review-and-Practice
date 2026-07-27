@@ -118,10 +118,10 @@ var mahsol = {
 }
 function showProduct() {
     document.getElementById("pet").innerHTML =
-    "نام : " + mahsol.name +
-    "<br>" + " قیمت : " + mahsol.price +
-    "<br>" + " تعداد : " + mahsol.quantity +
-    "<br>" + " قیمت نهایی : " + final;
+        "نام : " + mahsol.name +
+        "<br>" + " قیمت : " + mahsol.price +
+        "<br>" + " تعداد : " + mahsol.quantity +
+        "<br>" + " قیمت نهایی : " + final;
 }
 var final = mahsol.price * mahsol.quantity;
 showProduct()
@@ -176,7 +176,7 @@ function store() {
             "تعداد محصول : " + productُStore.count +
             "<br>" + "<br>" +
             "❌ این محصول ناموجود است."
-    } 
+    }
     // این بخش هم که بیشتر از صفر باشه اجرا میشه
     else {
         document.getElementById("count").innerHTML =
@@ -203,3 +203,60 @@ function addToBasket() {
             "❌ این محصول ناموجود است."
     }
 }
+// پروژه فروشگاه پایان 
+
+// پروژه معرفی خودم
+var me = {
+    firstName: "زهرا",
+    lastName: "فلیحی",
+    age: 24,
+    skill: "html , css, javascript, sass",
+    city: "هشتگرد",
+    goal: "react"
+}
+
+// روش اول با استفاده از return که خیلی طولانیه اما درست ران میشه
+function showName() {
+        return "نام : " + me.firstName + "  " + me.lastName;
+}
+
+function showAge() {
+        return "سن : " + me.age;
+}
+
+function showSkills() {
+        return "مهارت ها : " + me.skill;
+}
+
+function showCity() {
+        return "شهر : " + me.city;
+}
+
+function showGoal() {
+        return "هدف : " + me.goal;
+}
+
+function showProfile() {
+    document.getElementById("information").innerHTML =
+        showName() +
+        "<br>" +
+        showAge() +
+        "<br>" +
+        showCity() +
+        "<br>"+
+        showSkills()+
+        "<br>"+
+        showGoal()
+}
+showProfile()
+
+// روش دوم که راحت تر و سریع تره
+function showProfile() {
+    document.getElementById("information").innerHTML =
+        "نام : " + me.firstName + " " + me.lastName +
+        "<br>سن : " + me.age +
+        "<br>مهارت ها : " + me.skill +
+        "<br>شهر : " + me.city +
+        "<br>هدف : " + me.goal;
+}
+showProfile()
