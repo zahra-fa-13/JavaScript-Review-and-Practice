@@ -78,30 +78,57 @@
 // }
 // console.log(sumEven);
 
-// تمرین 10
-// میانگین نمرات و جمع نمرات با آرایه 
-var scores = [18, 20, 15, 17, 19];
-var sumScore = 0;
-// تو خط پایین <= نار و < بذار چون شمارش از 0 شروع میشه
-for (let i = 0; i < scores.length; i++) {
-    // جمعشون
-    sumScore += scores[i];
-}
-// میانگین
-var average = sumScore / scores.length;
+// // تمرین 10
+// // میانگین نمرات و جمع نمرات با آرایه 
+// var scores = [18, 20, 15, 17, 19];
+// var sumScore = 0;
+// // تو خط پایین <= نار و < بذار چون شمارش از 0 شروع میشه
+// for (let i = 0; i < scores.length; i++) {
+//     // جمعشون
+//     sumScore += scores[i];
+// }
+// // میانگین
+// var average = sumScore / scores.length;
 
-console.log(sumScore);
-console.log(average);
+// console.log(sumScore);
+// console.log(average);
 
-// تمرین 11
-var colors = [
-    "red",
-    "blue",
-    "green",
-    "yellow"
-];
-for (let rang = 0; rang < colors.length; rang++) {
-    // const element = colors[index];
-    console.log(colors[rang]);
+// // تمرین 11
+// // رنگ هارو چاپ کن
+// var colors = [
+//     "red",
+//     "blue",
+//     "green",
+//     "yellow"
+// ];
+// for (let rang = 0; rang < colors.length; rang++) {
+//     console.log(colors[rang]);
     
+// }
+
+// تمرین 12
+// نکتههههههههههههههههههههههههههههههههههههههههههههههههههههههههههه
+// با چیزایی که فعلا یاد گرفتی آبجکت رو نمیتونی باحلقه ترکیب کنی 
+// باید موارد زیر رو بلد باشی تا بشه : 
+// for...in
+// Object.keys()
+// Object.values()
+// پس زیریه خطاست فقط پاک نمیکنی که یادت بمونه
+// var product = {
+//     name: "Laptop",
+//     price: 35000,
+//     brand: "Asus",
+//     count: 5
+// };
+// for (let i = 0; i < product.length; i++) {
+//     console.log(i(product.name, product.price, product.brand, product.count));
+// }
+
+// تمرین 13
+// دکمه وقتی کلیک شد اعداد 1 تا 20 نمایش داده بشه
+var clickNumber = 0;
+
+while (clickNumber <= 20) {
+    console.log(clickNumber);
+    clickNumber++;
 }
