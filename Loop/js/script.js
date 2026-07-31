@@ -126,9 +126,34 @@
 
 // تمرین 13
 // دکمه وقتی کلیک شد اعداد 1 تا 20 نمایش داده بشه
+// var clickNumber = 0;
+
+// function clickMe() {
+
+//     if (clickNumber <= 20) {
+
+//         document.getElementById("result").innerHTML =
+//             "تعداد کلیک : " + clickNumber;
+
+//         clickNumber++;
+//     } else {
+
+//         document.getElementById("result").innerHTML =
+//             "❌ حداکثر تعداد کلیک انجام شد.";
+
+//     }
+
+// }
 var clickNumber = 0;
 
-while (clickNumber <= 20) {
-    console.log(clickNumber);
-    clickNumber++;
+function clickMe() {
+
+    if (clickNumber <= 20) {
+
+        document.getElementById("result").innerHTML +=
+            clickNumber + "<br>";
+
+        clickNumber++;
+    }
+
 }
