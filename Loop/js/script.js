@@ -103,7 +103,7 @@
 // ];
 // for (let rang = 0; rang < colors.length; rang++) {
 //     console.log(colors[rang]);
-    
+
 // }
 
 // تمرین 12
@@ -125,35 +125,15 @@
 // }
 
 // تمرین 13
-// دکمه وقتی کلیک شد اعداد 1 تا 20 نمایش داده بشه
-// var clickNumber = 0;
-
-// function clickMe() {
-
-//     if (clickNumber <= 20) {
-
-//         document.getElementById("result").innerHTML =
-//             "تعداد کلیک : " + clickNumber;
-
-//         clickNumber++;
-//     } else {
-
-//         document.getElementById("result").innerHTML =
-//             "❌ حداکثر تعداد کلیک انجام شد.";
-
-//     }
-
-// }
+// دکمه وقتی کلیک شد تعداد دفعات کلیک شده از اعداد 1 تا 20 نمایش داده بشه
 var clickNumber = 0;
 
-function clickMe() {
-
-    if (clickNumber <= 20) {
-
-        document.getElementById("result").innerHTML +=
-            clickNumber + "<br>";
-
+function showNumber() {
+    while (clickNumber <= 20) {
+        document.getElementById("result").innerHTML = clickNumber;
+        console.log(clickNumber);
         clickNumber++;
+        // اگر break نباشد، با یک بار کلیک حلقه از ۰ تا ۲۰ را یکجا اجرا می‌کند.
+        break;
     }
-
 }
