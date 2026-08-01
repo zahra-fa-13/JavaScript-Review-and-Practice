@@ -38,3 +38,8 @@ function mouse1() {
 function mouse2() {
     document.getElementById("text").innerHTML = "";
 }
+
+// تمرین  5
+function onChange() {
+    console.log("سلام زهرا");
+}
