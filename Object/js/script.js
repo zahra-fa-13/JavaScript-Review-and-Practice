@@ -124,3 +124,23 @@ if (userName === user.username && passWord === user.password) {
 } else {
     alert("Username or Password is incorrect")
 }
+
+// پروژه 3 
+// (پروفایل حرفه‌ای)
+var profile = {
+    firstName: "Zahra",
+    lastName: "Falihi",
+    age: 24,
+    city: "Hashtgerd",
+    email: "falihizahra13@gmail.com",
+    phone: +989120384261,
+    skills: "Html , Css , Sass , javascript",
+    goal: "react",
+    favoriteColor: "blue",
+    job: "Front-end Developer"
+};
+
+for (const key in profile) {
+    document.getElementById("profile").innerHTML +=
+        key + " " + ":" + " " + profile[key] + "<br>"
+}
