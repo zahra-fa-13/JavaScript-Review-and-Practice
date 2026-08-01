@@ -71,3 +71,14 @@ function onInput(event) {
     }
 
 }
+
+// تمرین 8
+// (onmouseover + onmouseout)
+function offer() {
+    document.getElementById("offerP").innerText = 
+    "✨ تخفیف ویژه"
+}
+function offerOut() {
+      document.getElementById("offerP").innerText = 
+    ""
+}
