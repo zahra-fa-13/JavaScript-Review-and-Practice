@@ -75,10 +75,37 @@ function onInput(event) {
 // تمرین 8
 // (onmouseover + onmouseout)
 function offer() {
-    document.getElementById("offerP").innerText = 
-    "✨ تخفیف ویژه"
+    document.getElementById("offerP").innerText =
+        "✨ تخفیف ویژه"
 }
 function offerOut() {
-      document.getElementById("offerP").innerText = 
-    ""
+    document.getElementById("offerP").innerText =
+        ""
+}
+
+// تمرین 9
+// (onclick + Object + if)
+var product = {
+    name: "Keyboard",
+    price: 2500000,
+    brand: "Logitech",
+    count: 3,
+    color: "Black"
+};
+
+function showProduct() {
+    var information = document.getElementById("information");
+
+    information.innerHTML = "";
+    if (product.count > 0) {
+        for (const key in product) {
+            information.innerHTML +=
+                key + " : " + product[key] + "<br>";
+        }
+
+        information.innerHTML += "🟢 موجود";
+    } else {
+        information.innerHTML =
+            "🔴 ناموجود";
+    }
 }
