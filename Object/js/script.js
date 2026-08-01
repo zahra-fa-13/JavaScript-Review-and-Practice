@@ -108,3 +108,19 @@ function showProduct() {
     }
 }
 
+// پروژه 2
+// بررسی ورود
+var user = {
+    username: "zahra",
+    password: 123456,
+    fullName: "Zahra Falihi"
+};
+
+var userName = prompt("Enter username : ");
+
+var passWord = Number(prompt("Enter password : "));
+if (userName === user.username && passWord === user.password) {
+    alert("Welcome " + user.fullName);
+} else {
+    alert("Username or Password is incorrect")
+}
