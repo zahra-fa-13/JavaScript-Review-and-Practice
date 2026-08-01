@@ -33,7 +33,7 @@ function changingColorP() {
 // تمرین 3 & 4
 function mouse1() {
     document.getElementById("text").innerText =
-     "این یک سگ بامزه است 🐶";
+        "این یک سگ بامزه است 🐶";
 }
 function mouse2() {
     document.getElementById("text").innerHTML = "";
@@ -42,4 +42,32 @@ function mouse2() {
 // تمرین  5
 function onChange() {
     console.log("سلام زهرا");
+}
+
+// تمرین 6
+// event.target      // عنصری که رویداد روی آن اتفاق افتاده
+// event.target.value // مقدار input
+// event.key         // کلیدی که کاربر فشار داده (مثل "a" یا "Enter")
+function onKeyDown(event) {
+    console.log(event);
+
+    document.getElementById("pInput").innerHTML =
+        event.target.value
+}
+
+// تمرین 7
+function onInput(event) {
+
+    var score = Number(event.target.value);
+    var result = document.getElementById("result");
+
+    // این خط میاد میگه اگر غیر از عدد وارد کرد و  NaN  شد بیاد پیام بده به کاربر 
+    if (Number.isNaN(score)) {
+        result.innerHTML = "⚠️ لطفاً فقط عدد وارد کنید.";
+    } else if (score >= 10) {
+        result.innerHTML = "قبول شدی ✅";
+    } else {
+        result.innerHTML = "مردود شدی ❌";
+    }
+
 }

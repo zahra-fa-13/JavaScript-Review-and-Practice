@@ -31,8 +31,14 @@
     </div>
     <p class="text-center" id="text"></p>
 
-    <!-- تمرین 5 -->
-     <input type="text" onchange="onChange()">
+    <!-- تمرین 5 & 6 -->
+    <div class="d-flex justify-content-around">
+        <input type="text" onchange="onChange()" onkeydown="onKeyDown(event)" id="userInput">
+        <p id="pInput"></p>
+    </div>
+
+    <input type="text" oninput="onInput(event)">
+    <p id="result"></p>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
