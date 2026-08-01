@@ -29,3 +29,12 @@ function changingColorP() {
     }
 
 }
+
+// تمرین 3 & 4
+function mouse1() {
+    document.getElementById("text").innerText =
+     "این یک سگ بامزه است 🐶";
+}
+function mouse2() {
+    document.getElementById("text").innerHTML = "";
+}
