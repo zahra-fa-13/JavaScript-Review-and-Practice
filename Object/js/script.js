@@ -144,3 +144,27 @@ for (const key in profile) {
     document.getElementById("profile").innerHTML +=
         key + " " + ":" + " " + profile[key] + "<br>"
 }
+
+// پروژه 4
+var scores = {
+    html: 20,
+    css: 19,
+    javascript: 18,
+    sass: 20
+};
+
+var sumScore = 0;
+
+for (const key in scores) {
+    // مجموع نمره ها 
+    sumScore += scores[key];
+    // همون بالاییه قابل فهم ترش
+    // sumScore = sumScore + scores[key];
+}
+console.log(sumScore);
+
+// خط زیر میاد کار length برای آرایه هارو میکنه یعنی تعداد \roperty هارو پیدا میکنه که چها تاست
+var average = sumScore / Object.keys(scores).length;
+// پایینیه حذف شد چون خط بالاش رو برای آبجکت یاد گرفتیم
+// var average = sumScore / 4;
+console.log(average);
