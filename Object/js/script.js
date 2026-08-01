@@ -86,4 +86,25 @@ for (const key in me) {
 }
 
 
+// پروژه 1
+// فروشگاه : با کلیک روی دکمه ی کارت اطلاعات محصول نمایش داده بشه
+var product = {
+    name: "Mouse",
+    brand: "Logitech",
+    price: 1200000,
+    count: 8,
+    color: "Black"
+};
+
+function showProduct() {
+
+    var information = document.getElementById("information");
+
+    information.innerHTML = "";
+
+    for (const key in product) {
+        information.innerHTML +=
+            key + " : " + product[key] + "<br>";
+    }
+}
 
