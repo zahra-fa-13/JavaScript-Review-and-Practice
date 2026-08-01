@@ -127,3 +127,19 @@ function minus() {
         i.innerHTML = count;
     }
 }
+
+// تمرین 11
+// کاربر رنگ وارد کرد، پس زمینه عوض بشه
+var changecolor = {
+    a: "blue",
+    b: "red",
+    c: "yellow",
+    d: "pink",
+    e: "green"
+};
+
+function onchange11(event) {
+    var color = event.target.value;
+
+    document.getElementsByClassName("div11")[0].style.background = color;
+}
