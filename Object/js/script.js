@@ -1,51 +1,51 @@
-// // تمرین 1
-// // دسترسی به property 
-// var car = {
-//     brand: "BMW",
-//     model: "M4",
-//     year: 2024,
-//     color: "Black"
-// };
-// console.log(car.brand, car.model, car.year, car.color);
+// تمرین 1
+// دسترسی به property 
+var car = {
+    brand: "BMW",
+    model: "M4",
+    year: 2024,
+    color: "Black"
+};
+console.log(car.brand, car.model, car.year, car.color);
 
-// // تمرین 2
-// // تغییر مقدار
-// var user = {
-//     name: "Ali",
-//     age: 20
-// };
-// console.log(user.age = 21, user.name);
+// تمرین 2
+// تغییر مقدار
+var user = {
+    name: "Ali",
+    age: 20
+};
+console.log(user.age = 21, user.name);
 
-// // تمرین 3
-// // (اضافه کردن Property)
-// var student = {
-//     name: "Sara",
-//     major: "Computer"
-// };
-// student.grade = 18.75;
-// console.log(student);
+// تمرین 3
+// (اضافه کردن Property)
+var student = {
+    name: "Sara",
+    major: "Computer"
+};
+student.grade = 18.75;
+console.log(student);
 
-// // تمرین 4
-// // (چک کردن Property با in)
-// var product = {
-//     name: "Laptop",
-//     price: 35000
-// };
-// if ("price" in product) {
-//     console.log("Price exists");
-// }
+// تمرین 4
+// (چک کردن Property با in)
+var product = {
+    name: "Laptop",
+    price: 35000
+};
+if ("price" in product) {
+    console.log("Price exists");
+}
 
-// // تمرین 5
-// // (undefined)
-// var person = {
-//     name: "Zahra",
-//     city: "Hashtgerd"
-// };
-// if (person.age == undefined) {
-//     console.log("Age not found");
-// } else {
-//     console.log("Age exists");
-// }
+// تمرین 5
+// (undefined)
+var person = {
+    name: "Zahra",
+    city: "Hashtgerd"
+};
+if (person.age == undefined) {
+    console.log("Age not found");
+} else {
+    console.log("Age exists");
+}
 
 // تمرین 6
 // (for...in)
@@ -55,13 +55,13 @@ var pet = {
     age: 4
 };
 for (let key in pet) {
+    // فقط مقدار رو نشون میده
     console.log(pet[key]);
+    // تمرین 7
+    // در این مدل هم کلید هم مقدار
+    console.log(key + " : " + pet[key]);
 }
-for (let property in pet) {
-   console.log(pet[property].type, pet.color, pet.age);
-   
-}
-// // این پیشرفته ی بالاییه و پیشنهاد  vscode
+// // این پیشرفته ی تمرین 6 و پیشنهاد  vscode
 // for (const key in pet) {
 //     // این یک بررسی اضافه است که مطمئن می‌شود ویژگی متعلق به خود شیء است و از زنجیره‌ی ارث‌بری (Prototype) نیامده است.
 //     if (!Object.hasOwn(pet, key)) continue;
@@ -69,4 +69,21 @@ for (let property in pet) {
 //     const element = pet[key];
 //     console.log(element);
 // }
+
+// تمرین 8     (پروفایل)
+var me = {
+    firstName: "Zahra",
+    lastName: "Falihi",
+    age: 24,
+    city: "Hashtgerd",
+    job: "Front-end Developer"
+};
+// لاین بعدی رو برای این گذاشتیم که اگر در پروژه ی اقعی بر اثر کلیک اطلاعات نمایش داده شد قبلی هارو پاک کنه و جدیده رو نمایش بده نه اینکه زیر اطلاعات قبلی جدید هارو اضافه کنه
+document.getElementById("resume").innerHTML = "";
+for (const key in me) {
+    document.getElementById("resume").innerHTML +=
+        key + " " + ":" + " " + me[key] + "<br>"
+}
+
+
 
