@@ -109,3 +109,21 @@ function showProduct() {
             "🔴 ناموجود";
     }
 }
+
+// تمرین 10
+// اضافه و کم کردن محصول در فروشگاه ها استفاده میشه
+var i = document.getElementById("number");
+var count = 0;
+
+function plus() {
+    count++;
+    i.innerHTML = count;
+
+}
+
+function minus() {
+    if (count > 0) {
+        count--;
+        i.innerHTML = count;
+    }
+}
