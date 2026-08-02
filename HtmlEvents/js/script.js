@@ -141,5 +141,25 @@ var changecolor = {
 function onchange11(event) {
     var color = event.target.value;
 
+    // خط کد زیر با نوشتن رنگ توسط کاربر بک گراند رو عوض میکنه
     document.getElementsByClassName("div11")[0].style.background = color;
+    // خط کد زیر با نوشتن حروف بک گراند رو عوض میکنه 
+    document.getElementsByClassName("div11")[0].style.background = changecolor[color];
+}
+
+// تمرین 12
+var loginInformation = {
+    userName: "Admin",
+    password: "11221133"
+};
+
+function login() {
+    var userName = document.getElementById("floatingInput").value;
+    var password = document.getElementById("floatingPassword").value;
+
+    if (userName === loginInformation.userName && password === loginInformation.password) {
+        alert("Welcome Admin ❤️")
+    } else {
+        alert("Username or Password is incorrect")
+    }
 }
