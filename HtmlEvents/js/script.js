@@ -147,7 +147,8 @@ function onchange11(event) {
     document.getElementsByClassName("div11")[0].style.background = changecolor[color];
 }
 
-// تمرین 12
+// پروژه 1
+// (Mini Login)
 var loginInformation = {
     userName: "Admin",
     password: "11221133"
