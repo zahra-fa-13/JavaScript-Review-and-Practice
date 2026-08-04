@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #00005e;
+}
+.clock{
+    color: gold;
+    font-size: 15rem;
+}
