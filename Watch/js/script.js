@@ -11,6 +11,17 @@ function clockRuner() {
         p = 'PM';
     }
 
+    // شرط زیر برای اینه که اعداد تک رقمی مثل8 نشون نه و دو رقمی 08 نشون بده
+    if (hour < 10) {
+        hour = "0" + hour;
+    }
+    if (minute < 10) {
+        minute = "0" + minute;
+    }
+    if (second < 10) {
+        second = "0" + second;
+    }
+
     var clock = hour + ":" + minute + ":" + second + " " + p;
 
     document.getElementById('myClockDisplay').textContent = clock;
