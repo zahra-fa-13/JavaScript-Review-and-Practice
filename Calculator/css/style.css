@@ -1,0 +1,14 @@
+.final {
+    width: 15rem;
+    height: 22rem;
+}
+
+.output {
+    background-color: aqua;
+}
+.red{
+    background-color: red;
+}
+h2{
+    font-size: 1.05rem;
+}
