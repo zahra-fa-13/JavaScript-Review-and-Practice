@@ -1,14 +1,21 @@
 .final {
     width: 15rem;
     height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 50%;
 }
 
 .output {
     background-color: aqua;
 }
-.red{
+
+.red {
     background-color: red;
 }
-h2{
+
+h2 {
     font-size: 1.05rem;
 }
